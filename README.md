@@ -1,1 +1,10 @@
-# programming_assignment
+# Programming with Python - PhD Course at PSE
+Welcome to the GitHub repo in which I host the code and data for my project. It consists of one of the initial steps of a project I am conducting on an evaluation of the impact of the so-called slow ones in Paris (*zones 30* in French). *Zones 30* regulated speed limits in different areas of Paris, lowering them from 50 km/h to 30 km/h, while performing works on the physical structure of the concerned street segments to enforce the regulation. In this mini-project, I have included:
+1. **A visualization exercise** to understand the geographic scope of the measure, as well as potential drivers of its implementation in a purely descriptive fashion.
+2. **A KNN model to try to predict accidents in a given area as a function of accident prevalence in the surroundings**. One of the wonders of geospatial analysis comes from the fact that the objects of interest are complex networks (cities), in which streets are edges and junctions are nodes, and edges are directional! This generates a lovely settings in which, in order to understand how the implementation of speed limits in blocks of streets works, we need to understand traffic patterns and the behavior of accidents in the surrounding areas.
+
+## Data sources
+All the data gathered in this repo is public data coming from the [Mairie de Paris open data portal](https://opendata.paris.fr/pages/home/).
+
+## Software
+Though I have conceived this specific notebook as a self-contained piece of code with low package dependence, I am conducting extensions and further steps of the project using a Docker environment developed by Dani Arribas-Bel (see [here](https://darribas.org/gds_env/guides/docker_install/)), which includes all the relevant packages for geospatial data sciences in their compatible versions. This provides a nice working environment and avoids the (terrible) consequences of ending up having an inconsistent environment without the need to install all the packages and enforce their compatible versions yourself. Cheers to Dani for keeping up the effort and championing open source resources!
